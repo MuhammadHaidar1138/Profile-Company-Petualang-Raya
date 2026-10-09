@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Tenda camping dengan api unggun di malam hari">
+  <rect width="600" height="450" fill="#12382a"/>
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="80" cy="60" r="3"/><circle cx="190" cy="110" r="2"/><circle cx="300" cy="50" r="3"/>
+    <circle cx="420" cy="90" r="2"/><circle cx="520" cy="46" r="3"/><circle cx="360" cy="140" r="2"/>
+  </g>
+  <circle cx="500" cy="100" r="34" fill="#fdf6d8"/>
+  <path d="M0 320c140-50 280-40 420-10s130 10 180-10v150H0z" fill="#1f5c40"/>
+  <rect y="360" width="600" height="90" fill="#0f2f22"/>
+  <path d="M110 360l110-170 110 170z" fill="#e8f3ec"/>
+  <path d="M220 190l110 170H220z" fill="#b8dcc6"/>
+  <path d="M190 360l30-80 30 80z" fill="#14452f"/>
+  <g fill="#0b2a1c">
+    <path d="M30 360l35-120 35 120z"/><path d="M480 360l40-130 40 130z"/><path d="M540 360l30-100 30 100z"/>
+  </g>
+  <path d="M390 372l36-14M444 372l-36-14" stroke="#7a5230" stroke-width="8" stroke-linecap="round"/>
+  <path d="M417 360c-20-18-8-40 0-54 6 16 26 28 10 54z" fill="#f4a63a"/>
+  <path d="M417 360c-9-12-3-22 0-30 4 10 14 16 6 30z" fill="#ffe08a"/>
+  <circle cx="417" cy="330" r="60" fill="#f4a63a" opacity="0.12"/>
+</svg>

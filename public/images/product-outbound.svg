@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Jembatan tali di antara pepohonan untuk kegiatan outbound">
+  <rect width="600" height="450" fill="#e8f4ec"/>
+  <path d="M0 330c150-60 300-50 600 0v120H0z" fill="#8cc7a6"/>
+  <!-- trees -->
+  <rect x="90" y="120" width="26" height="300" fill="#6b4a2b"/>
+  <rect x="484" y="120" width="26" height="300" fill="#6b4a2b"/>
+  <circle cx="103" cy="110" r="78" fill="#2f7a55"/>
+  <circle cx="497" cy="110" r="78" fill="#2f7a55"/>
+  <circle cx="103" cy="90" r="46" fill="#3f8c66"/>
+  <circle cx="497" cy="90" r="46" fill="#3f8c66"/>
+  <!-- platforms -->
+  <rect x="70" y="250" width="86" height="14" rx="3" fill="#a67c4a"/>
+  <rect x="444" y="250" width="86" height="14" rx="3" fill="#a67c4a"/>
+  <!-- bridge -->
+  <path d="M156 252C240 300 360 300 444 252" stroke="#14452f" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M156 204C240 252 360 252 444 204" stroke="#14452f" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <g stroke="#14452f" stroke-width="4">
+    <path d="M190 226v46M230 241v46M270 248v46M310 249v46M350 244v46M390 235v46M425 218v38"/>
+  </g>
+  <g fill="#a67c4a">
+    <rect x="176" y="270" width="28" height="8" rx="2"/><rect x="214" y="285" width="28" height="8" rx="2"/>
+    <rect x="255" y="293" width="28" height="8" rx="2"/><rect x="296" y="294" width="28" height="8" rx="2"/>
+    <rect x="336" y="288" width="28" height="8" rx="2"/><rect x="376" y="278" width="28" height="8" rx="2"/>
+  </g>
+  <!-- climber -->
+  <circle cx="300" cy="238" r="9" fill="#e8b48a"/>
+  <path d="M291 238a10 10 0 0 1 18 0z" fill="#f4a63a"/>
+  <rect x="293" y="247" width="14" height="24" rx="5" fill="#14452f"/>
+  <rect y="410" width="600" height="40" fill="#1f5c40"/>
+</svg>

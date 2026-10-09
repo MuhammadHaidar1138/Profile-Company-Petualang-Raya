@@ -1,0 +1,346 @@
+
+/* ===== Hero: Full Screen + Faded Background ===== */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: stretch;
+  padding: calc(var(--navbar-height) + 40px) 0 60px;
+  box-sizing: border-box;
+  background: var(--color-primary);
+}
+
+/* ===== Override Container khusus Hero ===== */
+
+.hero > .container.hero__grid {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-left: 48px;
+  padding-right: 48px;
+  box-sizing: border-box;
+}
+
+/* ===== Layer 1: Background Image ===== */
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: url('/images/TesHijau.avif') center / cover no-repeat;
+  transform-origin: center;
+  animation: heroBackgroundReveal 1.8s ease-out both;
+}
+
+@keyframes heroBackgroundReveal {
+  from {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===== Layer 2: Dark Green Gradient ===== */
+
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  /* Gradasi hitam dari bawah ke atas */
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.6) 35%,
+    rgba(0, 0, 0, 0.2) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* ===== Hero Layout ===== */
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: center;
+  gap: 64px;
+  width: 100%;
+  flex: 1;
+}
+
+/* ===== Title di Kiri Bawah ===== */
+
+.hero__content {
+  align-self: end;
+  padding-bottom: 0;
+  transform: translateY(20px);
+}
+
+.hero__eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* ===== Title Animation ===== */
+
+.hero__title {
+  max-width: 650px;
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 700;
+  color: #fff;
+  animation: heroTitleReveal 0.9s
+    cubic-bezier(0.22, 1, 0.36, 1) 0.25s both;
+}
+
+@keyframes heroTitleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Description di Tengah Kanan ===== */
+
+.hero__description {
+  align-self: center;
+  justify-self: end;
+  width: 100%;
+  max-width: 600px;
+  transform: translateY(-30px);
+}
+
+/* ===== Description Animation ===== */
+
+.hero__description {
+  animation: heroDescriptionReveal 1s
+    cubic-bezier(0.22, 1, 0.36, 1) 0.55s both;
+}
+
+@keyframes heroDescriptionReveal {
+  from {
+    opacity: 0;
+    transform: translate(35px, -30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, -30px);
+  }
+}
+
+.hero__desc {
+  margin: 0;
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+  line-height: 1.8;
+  color: #fff;
+}
+
+/* ===== Hero Actions ===== */
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* ===== Hero Media ===== */
+
+.hero__media img {
+  width: 100%;
+  border-radius: 24px;
+  border: 6px solid #fff;
+  box-shadow: var(--shadow-md);
+}
+
+/* ===== Tablet ===== */
+
+@media (max-width: 899px) {
+  .hero {
+    padding-top: calc(var(--navbar-height) + 48px);
+    padding-bottom: 40px;
+  }
+
+  .hero::after {
+    background:
+      /* Gradasi bawah hijau tua */
+      linear-gradient(
+        to bottom,
+        rgba(20, 69, 47, 0) 60%,
+        rgba(20, 69, 47, 0.95) 100%
+      ),
+      /* Gradasi hijau pada layar kecil */
+      linear-gradient(
+        to bottom,
+        rgba(10, 35, 23, 0.85) 0%,
+        rgba(20, 69, 47, 0.7) 45%,
+        rgba(20, 69, 47, 0.5) 100%
+      );
+  }
+
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-content: end;
+  }
+
+  .hero__content {
+    align-self: end;
+    padding-bottom: 0;
+    transform: translateY(0);
+  }
+
+  .hero__title {
+    font-size: clamp(2.3rem, 8vw, 3.5rem);
+  }
+
+  .hero__description {
+    justify-self: start;
+    max-width: 540px;
+    transform: translateY(0);
+  }
+
+  .hero__desc {
+    font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+    line-height: 1.7;
+  }
+
+  /* Animasi description untuk tablet */
+  @keyframes heroDescriptionReveal {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* ===== Small Mobile ===== */
+
+@media (max-width: 520px) {
+  .hero > .container.hero__grid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .hero__grid {
+    gap: 24px;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+  }
+
+  .hero__desc {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+}
+
+/* ===== Statistics ===== */
+
+/* .stats {
+  padding: 64px 0;
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.stats__grid {
+  display: grid;
+  gap: 32px 24px;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.stats__value {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--color-accent-light);
+  line-height: 1.2;
+}
+
+.stats__label {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.95rem;
+  color: #cfe5d7;
+} */
+
+
+/* Responsive */
+/* @media (max-width: 767px) {
+  .stats {
+    margin-top: -120px;
+    padding: 0 20px;
+  }
+
+  .stats__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 16px;
+    padding: 28px 16px;
+  }
+} */
+
+/* ===== Desktop Statistics ===== */
+
+/* @media (min-width: 768px) {
+  .stats__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+} */
+
+/* ===== Accessibility: Reduce Motion ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero::before,
+  .hero__title,
+  .hero__description {
+    animation: none;
+    opacity: 1;
+  }
+
+  .hero::before {
+    transform: none;
+  }
+
+  .hero__title,
+  .hero__description {
+    transform: none;
+  }
+}

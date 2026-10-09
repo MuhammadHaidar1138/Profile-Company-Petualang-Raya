@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Puncak gunung dengan bendera">
+  <rect width="600" height="450" fill="#e8f4ec"/>
+  <circle cx="470" cy="100" r="38" fill="#fdf6d8"/>
+  <path d="M0 360L150 200l90 90 100-170 130 200 130-100v230H0z" fill="#8cc7a6"/>
+  <path d="M0 400L190 250l110 100 120-150 180 190v60H0z" fill="#3f8c66"/>
+  <path d="M340 120l36 60-24-8-12 20-14-20-22 8z" fill="#ffffff"/>
+  <path d="M340 120V70" stroke="#14452f" stroke-width="5"/>
+  <path d="M340 70h34l-8 12 8 12h-34z" fill="#14452f"/>
+  <rect y="400" width="600" height="50" fill="#1f5c40"/>
+  <g fill="#14452f">
+    <path d="M50 400l30-100 30 100z"/><path d="M500 400l32-110 32 110z"/>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ilustrasi sekelompok pendaki menyusuri jalur hutan menuju puncak">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d4ecdd"/>
+      <stop offset="1" stop-color="#f4faf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 360L200 120l140 150 140-200 200 260 120-80v350H0z" fill="#8cc7a6"/>
+  <path d="M480 70l40 55-30-10-20 25-20-25-30 10z" fill="#ffffff"/>
+  <path d="M0 450c200-70 380-60 540-120s200-30 260-10v280H0z" fill="#3f8c66"/>
+  <path d="M0 520c180-50 360-40 520-90s200-20 280-10v180H0z" fill="#1f5c40"/>
+  <!-- trail -->
+  <path d="M120 600c160-70 260-90 380-130s160-70 200-110" stroke="#e8f3ec" stroke-width="26" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <!-- trees -->
+  <g fill="#14452f">
+    <path d="M40 560l50-170 50 170z"/><path d="M130 580l40-130 40 130z"/>
+    <path d="M660 470l45-150 45 150z"/><path d="M720 500l35-110 35 110z"/>
+    <path d="M590 420l30-90 30 90z"/>
+  </g>
+  <!-- hikers -->
+  <g>
+    <circle cx="300" cy="470" r="13" fill="#e8b48a"/>
+    <path d="M286 470a14 14 0 0 1 28 0z" fill="#ffffff"/>
+    <rect x="288" y="484" width="24" height="40" rx="8" fill="#14452f"/>
+    <rect x="278" y="486" width="14" height="30" rx="6" fill="#f4a63a"/>
+    <path d="M294 524l-6 28M306 524l6 28" stroke="#0f3a27" stroke-width="7" stroke-linecap="round"/>
+
+    <circle cx="390" cy="440" r="13" fill="#c98f66"/>
+    <path d="M376 440a14 14 0 0 1 28 0z" fill="#9ad9b4"/>
+    <rect x="378" y="454" width="24" height="40" rx="8" fill="#ffffff"/>
+    <rect x="368" y="456" width="14" height="30" rx="6" fill="#2f8f5b"/>
+    <path d="M384 494l-6 28M396 494l6 28" stroke="#0f3a27" stroke-width="7" stroke-linecap="round"/>
+
+    <circle cx="480" cy="410" r="13" fill="#e8b48a"/>
+    <path d="M466 410a14 14 0 0 1 28 0z" fill="#14452f"/>
+    <rect x="468" y="424" width="24" height="40" rx="8" fill="#2f8f5b"/>
+    <rect x="458" y="426" width="14" height="30" rx="6" fill="#ffffff"/>
+    <path d="M474 464l-6 28M486 464l6 28" stroke="#0f3a27" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>

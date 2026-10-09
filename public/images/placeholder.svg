@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Gambar tidak tersedia">
+  <rect width="600" height="450" fill="#e8f4ec"/>
+  <g fill="none" stroke="#8cc7a6" stroke-width="10" stroke-linejoin="round">
+    <rect x="200" y="140" width="200" height="150" rx="10"/>
+    <path d="M200 270l60-60 50 50 40-40 50 50"/>
+  </g>
+  <circle cx="270" cy="185" r="14" fill="#8cc7a6"/>
+</svg>
